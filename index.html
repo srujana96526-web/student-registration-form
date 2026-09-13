@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<style>
+    :root {
+        --primary: #ff69b4;
+        --secondary: #ffb6c1;
+        --background: #fff0f5;
+        --card: #ffffff;
+        --text: #444;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: var(--background);
+        margin: 0;
+        padding: 30px;
+    }
+
+    .container {
+        max-width: 500px;
+        margin: auto;
+        background: var(--card);
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+    }
+
+    h2 {
+        text-align: center;
+        color: var(--primary);
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-top: 12px;
+        font-weight: bold;
+        color: var(--text);
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid var(--secondary);
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        background: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #ff1493;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2> Student Registration Form </h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter your mobile number">
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <label>Gender</label>
+        <select>
+            <option>Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label>Course</label>
+        <select>
+            <option>Select Course</option>
+            <option>BCA</option>
+            <option>BSc</option>
+            <option>BCom</option>
+            <option>BTech</option>
+            <option>MCA</option>
+        </select>
+
+        <label>Address</label>
+        <textarea rows="4" placeholder="Enter your address"></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
